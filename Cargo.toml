@@ -1,0 +1,21 @@
+[package]
+name = "hijekt-macro"
+version = "0.0.2"
+edition = "2021"
+authors = ["L.R. Ochsner <l.ochsner@quality-network.com>"]
+license = "MIT"
+description = "Procedural macros for hijakt feature based compile time code injection"
+keywords = ["macro", "proc-macro", "codegen", "injection", "metaprogramming"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "2.0.106", features = [
+  "full",
+  "extra-traits",
+  "visit-mut",
+  "parsing",
+] }
+quote = "1.0.40"
+proc-macro2 = "1.0.101"
