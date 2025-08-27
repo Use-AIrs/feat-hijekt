@@ -22,7 +22,7 @@ Add your features to your `Cargo.toml` like:
 
 ```toml
 [dependencies]
-hijekt = "0.1.0"
+hijekt = "0.0.2"
 
 [features]
 debug = []
